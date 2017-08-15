@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TrueFalseQuestions</key>
+	<array>
+		<dict>
+			<key>Question</key>
+			<string>Washington D.C. is the capital of the US.</string>
+			<key>Value</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Question</key>
+			<string>Black is a color.</string>
+			<key>Value</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Question</key>
+			<string>6 x 7 = 43</string>
+			<key>Value</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Question</key>
+			<string>9 + 8 - 7 = 10</string>
+			<key>Value</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Question</key>
+			<string>Europe is a country.</string>
+			<key>Value</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Question</key>
+			<string>English is the official language of the US.</string>
+			<key>Value</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Question</key>
+			<string>2 cubed is 8.</string>
+			<key>Value</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Question</key>
+			<string>2 is a prime number.</string>
+			<key>Value</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Question</key>
+			<string>Penguins can fly.</string>
+			<key>Value</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Question</key>
+			<string>16 is a perfect square.</string>
+			<key>Value</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
+</plist>
