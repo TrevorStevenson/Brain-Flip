@@ -21,7 +21,6 @@
 		9C32B3C51C573F5400254F69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C32B3C31C573F5400254F69 /* Main.storyboard */; };
 		9C32B3C71C573F5400254F69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C32B3C61C573F5400254F69 /* Assets.xcassets */; };
 		9C32B3CA1C573F5400254F69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C32B3C81C573F5400254F69 /* LaunchScreen.storyboard */; };
-		9C32B3E01C573F5400254F69 /* ListenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C32B3DF1C573F5400254F69 /* ListenUITests.swift */; };
 		9C7879B21C9BB6B300787A62 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C7879B11C9BB6B300787A62 /* Data.plist */; };
 		9CAA1FC11C83F116003D1399 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAA1FC01C83F116003D1399 /* GameViewController.swift */; };
 		9CD593261D1360D7006D9300 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD593251D1360D7006D9300 /* StatsViewController.swift */; };
@@ -30,23 +29,6 @@
 		9CD5932E1D1363DC006D9300 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD5932D1D1363DC006D9300 /* UIKit.framework */; };
 		9CD593351D1364A6006D9300 /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD593341D1364A6006D9300 /* Chartboost.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		9C32B3D11C573F5400254F69 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9C32B3B41C573F5400254F69 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9C32B3BB1C573F5400254F69;
-			remoteInfo = Listen;
-		};
-		9C32B3DC1C573F5400254F69 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9C32B3B41C573F5400254F69 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9C32B3BB1C573F5400254F69;
-			remoteInfo = Listen;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3A0852FC1D1705AE005B00AF /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
@@ -66,11 +48,6 @@
 		9C32B3C61C573F5400254F69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C32B3C91C573F5400254F69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C32B3CB1C573F5400254F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C32B3D01C573F5400254F69 /* Brain Flip.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brain Flip.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C32B3D61C573F5400254F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C32B3DB1C573F5400254F69 /* Brain Flip.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brain Flip.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C32B3DF1C573F5400254F69 /* ListenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenUITests.swift; sourceTree = "<group>"; };
-		9C32B3E11C573F5400254F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C7879B11C9BB6B300787A62 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 		9CAA1FC01C83F116003D1399 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		9CD593251D1360D7006D9300 /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
@@ -102,20 +79,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C32B3CD1C573F5400254F69 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9C32B3D81C573F5400254F69 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -125,8 +88,6 @@
 				3A4FA57B1D1A128C00C47FA6 /* Brain Flip.entitlements */,
 				3A4FA5791D1A128C00C47FA6 /* AudioToolbox.framework */,
 				9C32B3BE1C573F5400254F69 /* Listen */,
-				9C32B3D31C573F5400254F69 /* ListenTests */,
-				9C32B3DE1C573F5400254F69 /* ListenUITests */,
 				9C32B3BD1C573F5400254F69 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -135,8 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				9C32B3BC1C573F5400254F69 /* Brain Flip.app */,
-				9C32B3D01C573F5400254F69 /* Brain Flip.xctest */,
-				9C32B3DB1C573F5400254F69 /* Brain Flip.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,23 +110,6 @@
 				9C4BF3D71C82C0C200947BF3 /* Assets */,
 			);
 			path = Listen;
-			sourceTree = "<group>";
-		};
-		9C32B3D31C573F5400254F69 /* ListenTests */ = {
-			isa = PBXGroup;
-			children = (
-				9C32B3D61C573F5400254F69 /* Info.plist */,
-			);
-			path = ListenTests;
-			sourceTree = "<group>";
-		};
-		9C32B3DE1C573F5400254F69 /* ListenUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9C32B3DF1C573F5400254F69 /* ListenUITests.swift */,
-				9C32B3E11C573F5400254F69 /* Info.plist */,
-			);
-			path = ListenUITests;
 			sourceTree = "<group>";
 		};
 		9C4BF3D71C82C0C200947BF3 /* Assets */ = {
@@ -223,42 +165,6 @@
 			productReference = 9C32B3BC1C573F5400254F69 /* Brain Flip.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9C32B3CF1C573F5400254F69 /* Brain FlipTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9C32B3E71C573F5400254F69 /* Build configuration list for PBXNativeTarget "Brain FlipTests" */;
-			buildPhases = (
-				9C32B3CC1C573F5400254F69 /* Sources */,
-				9C32B3CD1C573F5400254F69 /* Frameworks */,
-				9C32B3CE1C573F5400254F69 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9C32B3D21C573F5400254F69 /* PBXTargetDependency */,
-			);
-			name = "Brain FlipTests";
-			productName = ListenTests;
-			productReference = 9C32B3D01C573F5400254F69 /* Brain Flip.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		9C32B3DA1C573F5400254F69 /* Brain FlipUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9C32B3EA1C573F5400254F69 /* Build configuration list for PBXNativeTarget "Brain FlipUITests" */;
-			buildPhases = (
-				9C32B3D71C573F5400254F69 /* Sources */,
-				9C32B3D81C573F5400254F69 /* Frameworks */,
-				9C32B3D91C573F5400254F69 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9C32B3DD1C573F5400254F69 /* PBXTargetDependency */,
-			);
-			name = "Brain FlipUITests";
-			productName = ListenUITests;
-			productReference = 9C32B3DB1C573F5400254F69 /* Brain Flip.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -282,16 +188,6 @@
 							};
 						};
 					};
-					9C32B3CF1C573F5400254F69 = {
-						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 0830;
-						TestTargetID = 9C32B3BB1C573F5400254F69;
-					};
-					9C32B3DA1C573F5400254F69 = {
-						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 0830;
-						TestTargetID = 9C32B3BB1C573F5400254F69;
-					};
 				};
 			};
 			buildConfigurationList = 9C32B3B71C573F5400254F69 /* Build configuration list for PBXProject "Brain Flip" */;
@@ -308,8 +204,6 @@
 			projectRoot = "";
 			targets = (
 				9C32B3BB1C573F5400254F69 /* Brain Flip */,
-				9C32B3CF1C573F5400254F69 /* Brain FlipTests */,
-				9C32B3DA1C573F5400254F69 /* Brain FlipUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -323,20 +217,6 @@
 				9C32B3CA1C573F5400254F69 /* LaunchScreen.storyboard in Resources */,
 				9C32B3C71C573F5400254F69 /* Assets.xcassets in Resources */,
 				9C32B3C51C573F5400254F69 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9C32B3CE1C573F5400254F69 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9C32B3D91C573F5400254F69 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,35 +234,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C32B3CC1C573F5400254F69 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9C32B3D71C573F5400254F69 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9C32B3E01C573F5400254F69 /* ListenUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9C32B3D21C573F5400254F69 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9C32B3BB1C573F5400254F69 /* Brain Flip */;
-			targetProxy = 9C32B3D11C573F5400254F69 /* PBXContainerItemProxy */;
-		};
-		9C32B3DD1C573F5400254F69 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9C32B3BB1C573F5400254F69 /* Brain Flip */;
-			targetProxy = 9C32B3DC1C573F5400254F69 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9C32B3C31C573F5400254F69 /* Main.storyboard */ = {
@@ -532,58 +384,6 @@
 			};
 			name = Release;
 		};
-		9C32B3E81C573F5400254F69 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ListenTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TStevensonApps.ListenTests;
-				PRODUCT_NAME = "Brain Flip";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brain Flip.app/Brain Flip";
-			};
-			name = Debug;
-		};
-		9C32B3E91C573F5400254F69 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ListenTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TStevensonApps.ListenTests;
-				PRODUCT_NAME = "Brain Flip";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brain Flip.app/Brain Flip";
-			};
-			name = Release;
-		};
-		9C32B3EB1C573F5400254F69 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ListenUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TStevensonApps.ListenUITests;
-				PRODUCT_NAME = "Brain Flip";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = Listen;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		9C32B3EC1C573F5400254F69 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ListenUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TStevensonApps.ListenUITests;
-				PRODUCT_NAME = "Brain Flip";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = Listen;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -601,24 +401,6 @@
 			buildConfigurations = (
 				9C32B3E51C573F5400254F69 /* Debug */,
 				9C32B3E61C573F5400254F69 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9C32B3E71C573F5400254F69 /* Build configuration list for PBXNativeTarget "Brain FlipTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9C32B3E81C573F5400254F69 /* Debug */,
-				9C32B3E91C573F5400254F69 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9C32B3EA1C573F5400254F69 /* Build configuration list for PBXNativeTarget "Brain FlipUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9C32B3EB1C573F5400254F69 /* Debug */,
-				9C32B3EC1C573F5400254F69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
