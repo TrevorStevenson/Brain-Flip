@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3A0852FD1D1705AE005B00AF /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0852FC1D1705AE005B00AF /* GameKit.framework */; };
 		3A0852FF1D170961005B00AF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0852FE1D170961005B00AF /* StoreKit.framework */; };
-		3A4DF5CF1D15FDD400E4E315 /* RevMobAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4DF5CE1D15FDD400E4E315 /* RevMobAds.framework */; };
 		3A4DF5D11D15FDE200E4E315 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4DF5D01D15FDE200E4E315 /* SystemConfiguration.framework */; };
 		3A4DF5D31D15FDEB00E4E315 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4DF5D21D15FDEB00E4E315 /* MediaPlayer.framework */; };
 		3A4DF5D51D15FDF500E4E315 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4DF5D41D15FDF500E4E315 /* CoreLocation.framework */; };
@@ -33,7 +32,6 @@
 /* Begin PBXFileReference section */
 		3A0852FC1D1705AE005B00AF /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		3A0852FE1D170961005B00AF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		3A4DF5CE1D15FDD400E4E315 /* RevMobAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevMobAds.framework; sourceTree = "<group>"; };
 		3A4DF5D01D15FDE200E4E315 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3A4DF5D21D15FDEB00E4E315 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		3A4DF5D41D15FDF500E4E315 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -73,7 +71,6 @@
 				3A4DF5D11D15FDE200E4E315 /* SystemConfiguration.framework in Frameworks */,
 				9CD593351D1364A6006D9300 /* Chartboost.framework in Frameworks */,
 				9CD5932E1D1363DC006D9300 /* UIKit.framework in Frameworks */,
-				3A4DF5CF1D15FDD400E4E315 /* RevMobAds.framework in Frameworks */,
 				9CD5932C1D1363D6006D9300 /* CoreGraphics.framework in Frameworks */,
 				9CD5932A1D1363CF006D9300 /* Foundation.framework in Frameworks */,
 			);
@@ -136,7 +133,6 @@
 				3A4DF5D41D15FDF500E4E315 /* CoreLocation.framework */,
 				3A4DF5D21D15FDEB00E4E315 /* MediaPlayer.framework */,
 				3A4DF5D01D15FDE200E4E315 /* SystemConfiguration.framework */,
-				3A4DF5CE1D15FDD400E4E315 /* RevMobAds.framework */,
 				9CD593341D1364A6006D9300 /* Chartboost.framework */,
 				9CD5932D1D1363DC006D9300 /* UIKit.framework */,
 				9CD5932B1D1363D6006D9300 /* CoreGraphics.framework */,
