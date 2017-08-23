@@ -54,6 +54,8 @@ class GameViewController: UIViewController {
         scoreLabel.text = "Score: \(currentScore)"
         
         progressBar.progress = 1.0
+        let transform = CGAffineTransform(scaleX: 1, y: 4)
+        progressBar.transform = transform
         
         trueButton.isHidden = true
         falseButton.isHidden = true
@@ -105,17 +107,14 @@ class GameViewController: UIViewController {
         {
             endGame()
             gameTimer.invalidate()
-            
         }
     }
     
     func endGame()
     {
-        
         submitScore()
         
         performSegue(withIdentifier: "stats", sender: self)
-        
     }
     
     func submitScore()
@@ -126,21 +125,19 @@ class GameViewController: UIViewController {
         
         highScore.value = Int64(currentScore)
         
-        GKScore.report([highScore], withCompletionHandler: { (error:NSError?) -> Void in
+        GKScore.report([highScore], withCompletionHandler: { (error: Error?) -> Void in
             
-            if (error != nil)
+            if let err = error
             {
-                print(error!.localizedDescription)
+                print(err.localizedDescription)
             }
-        } as? (Error?) -> Void)
+        })
         
     }
     
     func createDirection()
     {
         let randomNumber = arc4random_uniform(2)
-        
-       // directionText = getTrueFalseQuestion()
         
         rand = Int(arc4random_uniform(100))
         
@@ -159,13 +156,10 @@ class GameViewController: UIViewController {
         }
         
         directionLabel.text = directionText
-
-        
     }
     
     func getTrueFalseQuestion() -> String
     {
-        
         var root: NSDictionary?
         
         var finalQuestion = ""
@@ -198,25 +192,20 @@ class GameViewController: UIViewController {
         
         if answer != 0 && !isBrainFlipped || answer == 0 && isBrainFlipped
         {
-            
             currentScore += 10
             
             scoreLabel.text = "Score: \(currentScore)"
             
             createDirection()
-            
         }
         else
         {
-            
             currentScore -= 10
             
             scoreLabel.text = "Score: \(currentScore)"
             
             createDirection()
         }
-        
-        
     }
     
     @IBAction func answerFalse(_ sender: AnyObject) {

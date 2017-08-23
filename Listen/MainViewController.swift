@@ -25,52 +25,34 @@ class MainViewController: UIViewController, GKGameCenterControllerDelegate {
     
     func authenticateLocalPlayer()
     {
-        localPlayer.authenticateHandler = {(viewController: UIViewController?, error: NSError?) in
+        let localPlayer = GKLocalPlayer.localPlayer()
+        
+        localPlayer.authenticateHandler = {(viewController: UIViewController?, error: Error?) in
             
-            if (viewController != nil)
-            {
-                
-                self.present(viewController!, animated: true, completion: nil)
-                
-            }
+            if let VC = viewController { self.present(VC, animated: true, completion: nil) }
             else
             {
-                if (GKLocalPlayer.localPlayer().isAuthenticated)
-                {
-                    self.gameCenterEnabled = true
-                    
-                    GKLocalPlayer.localPlayer().loadDefaultLeaderboardIdentifier(completionHandler: { (leaderboardIdentifier:String?, error:NSError?) -> Void in
-                        
-                        if (error != nil)
-                        {
-                            print(error!.localizedDescription)
-                        }
-                        else
-                        {
-                            self.leaderBoardIdentifier = leaderboardIdentifier!
-                            
-                        }
-                        
-                    } as? (String?, Error?) -> Void)
-                    
-                }
-                else
-                {
-                    self.gameCenterEnabled = false
-                }
+                guard localPlayer.isAuthenticated else { return }
+                
+                localPlayer.loadDefaultLeaderboardIdentifier(completionHandler:nil)
             }
-            
-        } as? (UIViewController?, Error?) -> Void
+        }
+    }
+    
+    func showLeaderboard(withIdentifier identifier: String)
+    {
+        let GKVC = GKGameCenterViewController()
+        GKVC.gameCenterDelegate = self
+        GKVC.viewState = GKGameCenterViewControllerState.leaderboards
+        GKVC.leaderboardIdentifier = identifier
         
+        present(GKVC, animated: true, completion: nil)
     }
     
     func gameCenterViewControllerDidFinish(_ gameCenterViewController: GKGameCenterViewController)
     {
         gameCenterViewController.dismiss(animated: true, completion: nil)
     }
-
-    
-   
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,8 +62,6 @@ class MainViewController: UIViewController, GKGameCenterControllerDelegate {
         authenticateLocalPlayer()
 
         navigationController?.isNavigationBarHidden = true
-        
-        
     }
     
     override func viewDidLayoutSubviews() {
@@ -113,9 +93,7 @@ class MainViewController: UIViewController, GKGameCenterControllerDelegate {
             
             brain1.frame = CGRect(x: view.frame.size.width/2 - brain1.frame.size.width/2, y: titleText.frame.minY + brain1.frame.size.height + 15, width: brain1.frame.size.width, height: brain1.frame.size.height)
         }
-        
     }
-
 
     func presentInstructions()
     {
@@ -126,24 +104,9 @@ class MainViewController: UIViewController, GKGameCenterControllerDelegate {
         self.present(alertView, animated: true, completion: nil)
     }
     
-    func showLeaderboard(_ identifier: NSString)
-    {
-        let GKVC = GKGameCenterViewController()
-        
-        GKVC.gameCenterDelegate = self
-        
-        GKVC.viewState = GKGameCenterViewControllerState.leaderboards
-        
-        GKVC.leaderboardIdentifier = identifier as String
-        
-        present(GKVC, animated: true, completion: nil)
-        
-    }
-    
     @IBAction func leaderboard(_ sender: AnyObject)
     {
-        
-        showLeaderboard(leaderBoardIdentifier as NSString)
+        showLeaderboard(withIdentifier: leaderBoardIdentifier)
         
     }
     @IBAction func help(_ sender: AnyObject) {

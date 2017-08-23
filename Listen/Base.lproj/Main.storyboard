@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="clv-qy-pgY">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="clv-qy-pgY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -31,79 +35,82 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brain Flip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6S-py-SgQ">
-                                <rect key="frame" x="223" y="82" width="154" height="47"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="36"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brain Flip" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6S-py-SgQ">
+                                <rect key="frame" x="111.5" y="50" width="153.5" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="snT-7F-1rf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="60"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewq-xI-U5o">
-                                <rect key="frame" x="240" y="240" width="120" height="120"/>
+                                <rect key="frame" x="127.5" y="273.5" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="PWO-qC-Hbg"/>
                                     <constraint firstAttribute="height" constant="120" id="R2d-Fy-2ou"/>
                                 </constraints>
-                                <state key="normal" image="Play Button"/>
+                                <state key="normal" image="playbutton"/>
                                 <connections>
                                     <segue destination="7Ow-eO-lcv" kind="show" id="YZS-xk-BgF"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brain Flip Logo" translatesAutoresizingMaskIntoConstraints="NO" id="xR4-eN-6h8">
-                                <rect key="frame" x="385" y="78" width="105" height="56"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brainFlipLogo" translatesAutoresizingMaskIntoConstraints="NO" id="xR4-eN-6h8">
+                                <rect key="frame" x="273" y="107.5" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="105" id="Tab-F8-biC"/>
-                                    <constraint firstAttribute="height" constant="56" id="czR-rF-GaN"/>
+                                    <constraint firstAttribute="width" constant="50" id="Tab-F8-biC"/>
+                                    <constraint firstAttribute="height" constant="50" id="czR-rF-GaN"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brain Flip Logo" translatesAutoresizingMaskIntoConstraints="NO" id="fBE-vZ-1d3">
-                                <rect key="frame" x="110" y="78" width="105" height="56"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brainFlipLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fBE-vZ-1d3">
+                                <rect key="frame" x="53" y="107.5" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="105" id="EuM-5F-meK"/>
-                                    <constraint firstAttribute="height" constant="56" id="yuS-A6-sO2"/>
+                                    <constraint firstAttribute="width" constant="50" id="EuM-5F-meK"/>
+                                    <constraint firstAttribute="height" constant="50" id="yuS-A6-sO2"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLq-tU-bKK">
-                                <rect key="frame" x="203" y="379" width="195" height="50"/>
+                                <rect key="frame" x="20" y="567" width="80" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="B8J-tu-New"/>
-                                    <constraint firstAttribute="width" constant="195" id="hWP-QN-Lmg"/>
+                                    <constraint firstAttribute="height" constant="80" id="B8J-tu-New"/>
+                                    <constraint firstAttribute="width" constant="80" id="hWP-QN-Lmg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                <state key="normal" title="Leaderboard" backgroundImage="Button"/>
+                                <state key="normal" backgroundImage="leaderboardButton"/>
                                 <connections>
                                     <action selector="leaderboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CnW-sS-gy1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdX-po-Gj5">
-                                <rect key="frame" x="203" y="437" width="195" height="50"/>
+                                <rect key="frame" x="275" y="567" width="80" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="195" id="WF6-OA-Plc"/>
-                                    <constraint firstAttribute="height" constant="50" id="hda-0a-6fO"/>
+                                    <constraint firstAttribute="width" constant="80" id="WF6-OA-Plc"/>
+                                    <constraint firstAttribute="height" constant="80" id="hda-0a-6fO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                <state key="normal" title="Help" backgroundImage="Button"/>
+                                <state key="normal" backgroundImage="helpButton"/>
                                 <connections>
                                     <action selector="help:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PMy-BO-DGX"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="z6S-py-SgQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Asm-Pu-m0X"/>
                             <constraint firstItem="ewq-xI-U5o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BoG-RA-Ofb"/>
                             <constraint firstItem="ewq-xI-U5o" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EOU-Wf-rhW"/>
                             <constraint firstItem="fBE-vZ-1d3" firstAttribute="centerY" secondItem="z6S-py-SgQ" secondAttribute="centerY" id="PbW-pw-Qn7"/>
+                            <constraint firstAttribute="trailing" secondItem="kdX-po-Gj5" secondAttribute="trailing" constant="20" id="QH5-mw-a1S"/>
                             <constraint firstItem="xR4-eN-6h8" firstAttribute="leading" secondItem="z6S-py-SgQ" secondAttribute="trailing" constant="8" id="X05-y3-3pB"/>
                             <constraint firstItem="xR4-eN-6h8" firstAttribute="centerY" secondItem="z6S-py-SgQ" secondAttribute="centerY" id="dTX-HR-t43"/>
-                            <constraint firstItem="kdX-po-Gj5" firstAttribute="top" secondItem="hLq-tU-bKK" secondAttribute="bottom" constant="8" id="dsX-CX-TQ0"/>
-                            <constraint firstItem="z6S-py-SgQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="62" id="pwa-fR-mWm"/>
-                            <constraint firstItem="hLq-tU-bKK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vSV-nb-fIB"/>
-                            <constraint firstItem="kdX-po-Gj5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vhu-PZ-2j1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kdX-po-Gj5" secondAttribute="bottom" constant="20" id="iJK-P1-rGw"/>
+                            <constraint firstItem="z6S-py-SgQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="pwa-fR-mWm"/>
+                            <constraint firstItem="hLq-tU-bKK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="tJh-9o-BV0"/>
                             <constraint firstItem="z6S-py-SgQ" firstAttribute="leading" secondItem="fBE-vZ-1d3" secondAttribute="trailing" constant="8" id="wRv-gI-qZe"/>
-                            <constraint firstItem="hLq-tU-bKK" firstAttribute="top" secondItem="ewq-xI-U5o" secondAttribute="bottom" constant="19" id="y6r-IY-wub"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hLq-tU-bKK" secondAttribute="bottom" constant="20" id="yx0-4A-jEc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Zfh-E9-TOM"/>
@@ -111,15 +118,13 @@
                     <connections>
                         <outlet property="brain1" destination="fBE-vZ-1d3" id="Xyr-7h-sbT"/>
                         <outlet property="brain2" destination="xR4-eN-6h8" id="eAr-jk-aUj"/>
-                        <outlet property="buttonConstraint" destination="dsX-CX-TQ0" id="9zb-ij-xDd"/>
-                        <outlet property="midConstraint" destination="y6r-IY-wub" id="wMX-9J-z7s"/>
                         <outlet property="titleText" destination="z6S-py-SgQ" id="dWm-uH-Cjf"/>
                         <outlet property="topConstraint" destination="pwa-fR-mWm" id="Ofs-Fs-4Q4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="887" y="611"/>
+            <point key="canvasLocation" x="885.60000000000002" y="610.34482758620697"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="ho6-3E-2da">
@@ -130,72 +135,72 @@
                         <viewControllerLayoutGuide type="bottom" id="Txl-ca-Vmj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="EWK-ks-syn">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brain Flip Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="R0K-IP-erz">
-                                <rect key="frame" x="20" y="78" width="560" height="214"/>
+                                <rect key="frame" x="20" y="78" width="335" height="247.5"/>
                             </imageView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="800" verticalCompressionResistancePriority="800" progressViewStyle="bar" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="JGF-wi-Z42">
-                                <rect key="frame" x="20" y="60" width="560" height="3"/>
-                                <color key="progressTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="16" y="60" width="343" height="2.5"/>
+                                <color key="progressTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjI-7H-7sI">
-                                <rect key="frame" x="252" y="517" width="97" height="23"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="140" y="582" width="95.5" height="25"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uV-gn-YM1">
-                                <rect key="frame" x="463" y="20" width="117" height="30"/>
+                                <rect key="frame" x="242" y="20" width="117" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="9zx-p8-a2j"/>
                                     <constraint firstAttribute="width" constant="117" id="Uee-eR-BSp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                 <state key="normal" title="Quit" backgroundImage="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="quit:" destination="7Ow-eO-lcv" eventType="touchUpInside" id="oML-7J-1cR"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlZ-sD-ojT">
-                                <rect key="frame" x="300" y="300" width="0.0" height="0.0"/>
+                                <rect key="frame" x="187.5" y="333.5" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKz-ii-I9L">
-                                <rect key="frame" x="300" y="300" width="300" height="209"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="187.5" y="333.5" width="187.5" height="240.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
                                 <state key="normal" title="Even">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="answerFalse:" destination="7Ow-eO-lcv" eventType="touchUpInside" id="Leq-ip-X0h"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhw-ff-2DY">
-                                <rect key="frame" x="0.0" y="300" width="300" height="209"/>
-                                <color key="backgroundColor" red="0.088742304340170428" green="0.50937500000000002" blue="0.1574560799977818" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="333.5" width="187.5" height="240.5"/>
+                                <color key="backgroundColor" red="0.088742304340170428" green="0.50937500000000002" blue="0.1574560799977818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
                                 <state key="normal" title="Odd">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="answerTrue:" destination="7Ow-eO-lcv" eventType="touchUpInside" id="8l9-lM-57K"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ooi-Ea-1Qz">
-                                <rect key="frame" x="20" y="78" width="560" height="214"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="140"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="20" y="78" width="335" height="247.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="140"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="IKz-ii-I9L" firstAttribute="leading" secondItem="PlZ-sD-ojT" secondAttribute="leading" id="5Ao-lX-9GH"/>
                             <constraint firstItem="rjI-7H-7sI" firstAttribute="top" secondItem="IKz-ii-I9L" secondAttribute="bottom" constant="8" id="7ZI-dO-ZXQ"/>
@@ -273,51 +278,51 @@
                         <viewControllerLayoutGuide type="bottom" id="xFA-lo-aUx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6sM-iY-5U3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4t-GW-fa9">
-                                <rect key="frame" x="192" y="48" width="217" height="52"/>
+                                <rect key="frame" x="79" y="48" width="217" height="52"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRK-Xa-t52">
-                                <rect key="frame" x="220" y="280" width="161" height="39"/>
+                                <rect key="frame" x="107" y="314" width="161" height="39"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="800" verticalCompressionResistancePriority="800" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZa-na-0Ev">
-                                <rect key="frame" x="222" y="500" width="156" height="40"/>
+                                <rect key="frame" x="109.5" y="567" width="156" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="156" id="nmA-0L-to9"/>
                                     <constraint firstAttribute="height" constant="40" id="phA-bQ-oq5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                 <state key="normal" title="Quit" backgroundImage="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="quit:" destination="rts-k5-SjE" eventType="touchUpInside" id="bo1-PA-ADW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baa-nE-yxx">
-                                <rect key="frame" x="222" y="452" width="156" height="40"/>
+                                <rect key="frame" x="109.5" y="519" width="156" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="MZ7-hr-8fG"/>
                                     <constraint firstAttribute="width" constant="156" id="kJ5-5A-B0O"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                 <state key="normal" title="Play Again" backgroundImage="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="7Ow-eO-lcv" kind="show" id="2tP-uy-qf1"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="oRK-Xa-t52" firstAttribute="centerY" secondItem="6sM-iY-5U3" secondAttribute="centerY" id="2vk-cg-1jl"/>
                             <constraint firstItem="OZa-na-0Ev" firstAttribute="top" secondItem="baa-nE-yxx" secondAttribute="bottom" constant="8" id="8mT-Uj-EHo"/>
@@ -353,11 +358,13 @@
     </scenes>
     <resources>
         <image name="Brain Flip Backdrop" width="744" height="837"/>
-        <image name="Brain Flip Logo" width="719" height="433"/>
         <image name="Button" width="314" height="83"/>
-        <image name="Play Button" width="210" height="210"/>
+        <image name="brainFlipLogo" width="450" height="450"/>
+        <image name="helpButton" width="150" height="150"/>
+        <image name="leaderboardButton" width="150" height="150"/>
+        <image name="playbutton" width="336" height="336"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YZS-xk-BgF"/>
+        <segue reference="2tP-uy-qf1"/>
     </inferredMetricsTieBreakers>
 </document>
