@@ -12,7 +12,7 @@ import GameKit
 
 class GameViewController: UIViewController {
 
-    //outlets
+    // outlets
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var directionLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
@@ -20,7 +20,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var falseButton: UIButton!
 
     let beginButton = UIButton()
-    
+
     var directionText = ""
     var currentQuestion: NSDictionary?
     var isBrainFlipped = false
@@ -44,17 +44,16 @@ class GameViewController: UIViewController {
         }
         
         beginButton.frame = CGRect(x: self.view.frame.size.width/2 - (195/2), y: self.view.frame.size.height/2, width: 195, height: 50)
-        beginButton.setTitle("Begin", for: UIControlState())
         beginButton.addTarget(self, action: #selector(GameViewController.startGame), for: .touchUpInside)
-        beginButton.setTitleColor(UIColor.white, for: UIControlState())
+        beginButton.setTitleColor(UIColor.white, for: .normal)
         beginButton.titleLabel?.font = UIFont(name: "Futura", size: 20)
-        beginButton.setBackgroundImage(UIImage(named: "Button"), for: UIControlState())
+        beginButton.setBackgroundImage(#imageLiteral(resourceName: "playbutton"), for: .normal)
         self.view.addSubview(beginButton)
         
         scoreLabel.text = "Score: \(currentScore)"
         
         progressBar.progress = 1.0
-        let transform = CGAffineTransform(scaleX: 1, y: 4)
+        let transform = CGAffineTransform(scaleX: 1, y: 2)
         progressBar.transform = transform
         
         trueButton.isHidden = true
@@ -95,13 +94,12 @@ class GameViewController: UIViewController {
         
         createDirection()
         
-        gameTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(GameViewController.updateTimer), userInfo: nil, repeats: true)
-        
+        gameTimer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(GameViewController.updateTimer), userInfo: nil, repeats: true)
     }
     
     func updateTimer()
     {
-        progressBar.progress -= 1/300
+        progressBar.progress -= 1/30000
         
         if progressBar.progress <= 0
         {

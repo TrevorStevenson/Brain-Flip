@@ -10,7 +10,7 @@ import UIKit
 import GameKit
 
 class MainViewController: UIViewController, GKGameCenterControllerDelegate {
-    
+
     var leaderBoardIdentifier: String = "highScore_BF"
     
     var localPlayer = GKLocalPlayer()
@@ -29,7 +29,10 @@ class MainViewController: UIViewController, GKGameCenterControllerDelegate {
         
         localPlayer.authenticateHandler = {(viewController: UIViewController?, error: Error?) in
             
-            if let VC = viewController { self.present(VC, animated: true, completion: nil) }
+            if let VC = viewController
+            {
+                self.present(VC, animated: true, completion: nil)
+            }
             else
             {
                 guard localPlayer.isAuthenticated else { return }
@@ -109,6 +112,7 @@ class MainViewController: UIViewController, GKGameCenterControllerDelegate {
         showLeaderboard(withIdentifier: leaderBoardIdentifier)
         
     }
+    
     @IBAction func help(_ sender: AnyObject) {
         
         presentInstructions()

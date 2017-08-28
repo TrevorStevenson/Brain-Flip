@@ -13,11 +13,10 @@ class StatsViewController: UIViewController {
     @IBOutlet weak var finalScoreLabel: UILabel!
     @IBOutlet weak var buttonConstraint: NSLayoutConstraint!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
-    
+
     @IBOutlet weak var gameOverLabel: UILabel!
     
     var finalScore = 0
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
