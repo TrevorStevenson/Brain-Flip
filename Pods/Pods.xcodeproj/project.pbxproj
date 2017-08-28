@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00049BBBF96FDA5E505E92EE5C9378C8 /* Fade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C11E144EFF61E95B1F13CD9B64F8B01 /* Fade.swift */; };
+		1FD3C27A18E37D21B5F9BA9CD8205347 /* CodeTrevor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF48055396F07F569243D807DF8FCA /* CodeTrevor-dummy.m */; };
+		5AA9C0CEEEC97FD926A5F358E601BCB6 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFE43BAEC9FB5C003F235A12D1FFF83 /* Object.swift */; };
+		6952047211F7B91EC09BAE4D4F2E8603 /* Pods-Brain Flip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ECABA879E627539B75315DB7DFD51C5 /* Pods-Brain Flip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E36FF3C9C80AF183F7AF608B271CEEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		84E66735E3E756913B43E627AAA0F39E /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40B948B9F6752FC68A1D97DE182879 /* Scale.swift */; };
+		966F3C9683D757C80335756DA695DED4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		9A19EBF2FE5D498D0DCFCB222D28E77B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		B88DBAE2BB07A5D2E82F8E33D7D55B0A /* Fly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FFF5FC4E7712110A37348CFB9E897F /* Fly.swift */; };
+		D099C3138A506C903C680E3FFC7860DA /* Pods-Brain Flip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF4DF070AE4057FEB6F02C77BC02A59 /* Pods-Brain Flip-dummy.m */; };
+		D467E1612B500820839492778CBD0585 /* CodeTrevor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ACB0452CC5D8B15AD5609AA68A2F2704 /* CodeTrevor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D55A0A51883A4A0E02D1E6C522A1A9FD /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F239A5477875AE58B7609A0331EA809F /* LinkedList.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A569A6BB774E4C8EAC0A379FBA6E7160 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51B7A196B59E2D8386698313F0F5C94B;
+			remoteInfo = CodeTrevor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		041409D447FC32E24DE7523A52B92716 /* Pods-Brain Flip-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Brain Flip-resources.sh"; sourceTree = "<group>"; };
+		173D8E9F7A70F7B3E04FFDB1A0BC6AAF /* Pods-Brain Flip-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Brain Flip-frameworks.sh"; sourceTree = "<group>"; };
+		3F38C16DFFD971DF787928B7489948F5 /* CodeTrevor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodeTrevor-prefix.pch"; sourceTree = "<group>"; };
+		4A02ABFD42F2A4A287C239DA4037C073 /* CodeTrevor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CodeTrevor.modulemap; sourceTree = "<group>"; };
+		4A7ED184AEEF3723B9B4D67A1B2B8A65 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55D3F399A4FA5A059ECD972857F21DCF /* Pods-Brain Flip-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Brain Flip-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5CF4DF070AE4057FEB6F02C77BC02A59 /* Pods-Brain Flip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Brain Flip-dummy.m"; sourceTree = "<group>"; };
+		6742A3DB1D1E1A53E10DE304B3A24220 /* Pods-Brain Flip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Brain Flip.release.xcconfig"; sourceTree = "<group>"; };
+		6C11E144EFF61E95B1F13CD9B64F8B01 /* Fade.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fade.swift; path = CodeTrevor/Fade.swift; sourceTree = "<group>"; };
+		78C1DCA70FB19E6029676C1514FE2346 /* Pods_Brain_Flip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Brain_Flip.framework; path = "Pods-Brain Flip.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ECABA879E627539B75315DB7DFD51C5 /* Pods-Brain Flip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Brain Flip-umbrella.h"; sourceTree = "<group>"; };
+		845A706F15E637122251A21BBFF7C9BD /* CodeTrevor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CodeTrevor.framework; path = CodeTrevor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		897D4458138DADA6AE06893FC05DB83F /* CodeTrevor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CodeTrevor.xcconfig; sourceTree = "<group>"; };
+		8A14FAF7E1839521F6D1F6AF4BBEE18F /* Pods-Brain Flip-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Brain Flip-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9CEF48055396F07F569243D807DF8FCA /* CodeTrevor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CodeTrevor-dummy.m"; sourceTree = "<group>"; };
+		9F40B948B9F6752FC68A1D97DE182879 /* Scale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scale.swift; path = CodeTrevor/Scale.swift; sourceTree = "<group>"; };
+		ACB0452CC5D8B15AD5609AA68A2F2704 /* CodeTrevor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodeTrevor-umbrella.h"; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B8FFF5FC4E7712110A37348CFB9E897F /* Fly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fly.swift; path = CodeTrevor/Fly.swift; sourceTree = "<group>"; };
+		BCFE43BAEC9FB5C003F235A12D1FFF83 /* Object.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Object.swift; path = CodeTrevor/Object.swift; sourceTree = "<group>"; };
+		BDFD6D35DAC435B26F0DCE378F2836B7 /* Pods-Brain Flip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Brain Flip.modulemap"; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F0EFA23ED9EC66AE2E3B57C7D7EF380D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F239A5477875AE58B7609A0331EA809F /* LinkedList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinkedList.swift; path = CodeTrevor/LinkedList.swift; sourceTree = "<group>"; };
+		F27F1FC45873C4CC3FC15C719F25BC73 /* Pods-Brain Flip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Brain Flip.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C96B710121D5018A2AD48290824822D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A19EBF2FE5D498D0DCFCB222D28E77B /* Foundation.framework in Frameworks */,
+				966F3C9683D757C80335756DA695DED4 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83245F4BC3C93DFD648B049139F3BF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E36FF3C9C80AF183F7AF608B271CEEF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BAD9C532038A9616FDCCDA64185630C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A02ABFD42F2A4A287C239DA4037C073 /* CodeTrevor.modulemap */,
+				897D4458138DADA6AE06893FC05DB83F /* CodeTrevor.xcconfig */,
+				9CEF48055396F07F569243D807DF8FCA /* CodeTrevor-dummy.m */,
+				3F38C16DFFD971DF787928B7489948F5 /* CodeTrevor-prefix.pch */,
+				ACB0452CC5D8B15AD5609AA68A2F2704 /* CodeTrevor-umbrella.h */,
+				4A7ED184AEEF3723B9B4D67A1B2B8A65 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CodeTrevor";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		474B50CE54F5D6747DD0E1B50B397077 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5301A6D5D71FEABDB1A617CAFE824BD /* CodeTrevor */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7807A42014AECC2449A3CE7C3C6734F1 /* Pods-Brain Flip */ = {
+			isa = PBXGroup;
+			children = (
+				F0EFA23ED9EC66AE2E3B57C7D7EF380D /* Info.plist */,
+				BDFD6D35DAC435B26F0DCE378F2836B7 /* Pods-Brain Flip.modulemap */,
+				55D3F399A4FA5A059ECD972857F21DCF /* Pods-Brain Flip-acknowledgements.markdown */,
+				8A14FAF7E1839521F6D1F6AF4BBEE18F /* Pods-Brain Flip-acknowledgements.plist */,
+				5CF4DF070AE4057FEB6F02C77BC02A59 /* Pods-Brain Flip-dummy.m */,
+				173D8E9F7A70F7B3E04FFDB1A0BC6AAF /* Pods-Brain Flip-frameworks.sh */,
+				041409D447FC32E24DE7523A52B92716 /* Pods-Brain Flip-resources.sh */,
+				7ECABA879E627539B75315DB7DFD51C5 /* Pods-Brain Flip-umbrella.h */,
+				F27F1FC45873C4CC3FC15C719F25BC73 /* Pods-Brain Flip.debug.xcconfig */,
+				6742A3DB1D1E1A53E10DE304B3A24220 /* Pods-Brain Flip.release.xcconfig */,
+			);
+			name = "Pods-Brain Flip";
+			path = "Target Support Files/Pods-Brain Flip";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				474B50CE54F5D6747DD0E1B50B397077 /* Pods */,
+				A4C2FFACA01180B76CC47820F38D6574 /* Products */,
+				8B44895998F30CDB62EF1D774394B62F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8B44895998F30CDB62EF1D774394B62F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7807A42014AECC2449A3CE7C3C6734F1 /* Pods-Brain Flip */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A4C2FFACA01180B76CC47820F38D6574 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				845A706F15E637122251A21BBFF7C9BD /* CodeTrevor.framework */,
+				78C1DCA70FB19E6029676C1514FE2346 /* Pods_Brain_Flip.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5301A6D5D71FEABDB1A617CAFE824BD /* CodeTrevor */ = {
+			isa = PBXGroup;
+			children = (
+				6C11E144EFF61E95B1F13CD9B64F8B01 /* Fade.swift */,
+				B8FFF5FC4E7712110A37348CFB9E897F /* Fly.swift */,
+				F239A5477875AE58B7609A0331EA809F /* LinkedList.swift */,
+				BCFE43BAEC9FB5C003F235A12D1FFF83 /* Object.swift */,
+				9F40B948B9F6752FC68A1D97DE182879 /* Scale.swift */,
+				0BAD9C532038A9616FDCCDA64185630C /* Support Files */,
+			);
+			name = CodeTrevor;
+			path = CodeTrevor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		434DA53531CABB74C99063D493A2DE04 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6952047211F7B91EC09BAE4D4F2E8603 /* Pods-Brain Flip-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F27076E0DCC12DDC128E21D0BFB1C4D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D467E1612B500820839492778CBD0585 /* CodeTrevor-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		51B7A196B59E2D8386698313F0F5C94B /* CodeTrevor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95A71B914792EA54A48A288967FEED1F /* Build configuration list for PBXNativeTarget "CodeTrevor" */;
+			buildPhases = (
+				2C88A6A606C7D8BE31B9FA5A079C9461 /* Sources */,
+				3C96B710121D5018A2AD48290824822D /* Frameworks */,
+				F27076E0DCC12DDC128E21D0BFB1C4D1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodeTrevor;
+			productName = CodeTrevor;
+			productReference = 845A706F15E637122251A21BBFF7C9BD /* CodeTrevor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F26529123D24A9B2FC0ED493BA28DE98 /* Pods-Brain Flip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF7930B97222738898B744995CB264D7 /* Build configuration list for PBXNativeTarget "Pods-Brain Flip" */;
+			buildPhases = (
+				3F49380BEFE818FB397C167ED0D43A35 /* Sources */,
+				D83245F4BC3C93DFD648B049139F3BF0 /* Frameworks */,
+				434DA53531CABB74C99063D493A2DE04 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11C507B6F5A20528E149A6DDFC236AE2 /* PBXTargetDependency */,
+			);
+			name = "Pods-Brain Flip";
+			productName = "Pods-Brain Flip";
+			productReference = 78C1DCA70FB19E6029676C1514FE2346 /* Pods_Brain_Flip.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A4C2FFACA01180B76CC47820F38D6574 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				51B7A196B59E2D8386698313F0F5C94B /* CodeTrevor */,
+				F26529123D24A9B2FC0ED493BA28DE98 /* Pods-Brain Flip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C88A6A606C7D8BE31B9FA5A079C9461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FD3C27A18E37D21B5F9BA9CD8205347 /* CodeTrevor-dummy.m in Sources */,
+				00049BBBF96FDA5E505E92EE5C9378C8 /* Fade.swift in Sources */,
+				B88DBAE2BB07A5D2E82F8E33D7D55B0A /* Fly.swift in Sources */,
+				D55A0A51883A4A0E02D1E6C522A1A9FD /* LinkedList.swift in Sources */,
+				5AA9C0CEEEC97FD926A5F358E601BCB6 /* Object.swift in Sources */,
+				84E66735E3E756913B43E627AAA0F39E /* Scale.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F49380BEFE818FB397C167ED0D43A35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D099C3138A506C903C680E3FFC7860DA /* Pods-Brain Flip-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11C507B6F5A20528E149A6DDFC236AE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CodeTrevor;
+			target = 51B7A196B59E2D8386698313F0F5C94B /* CodeTrevor */;
+			targetProxy = A569A6BB774E4C8EAC0A379FBA6E7160 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		464F2CD511A78F879317C6D33DF11252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 897D4458138DADA6AE06893FC05DB83F /* CodeTrevor.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CodeTrevor/CodeTrevor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CodeTrevor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CodeTrevor/CodeTrevor.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CodeTrevor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4E487F173E6C9664F4E9E26B9635D23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AE839407138F1D2095CBAE7BD9D02FD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6742A3DB1D1E1A53E10DE304B3A24220 /* Pods-Brain Flip.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Brain Flip/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Brain Flip/Pods-Brain Flip.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Brain_Flip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BAFAE6B0A4BFBCDB2FC87ADF827E84BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 897D4458138DADA6AE06893FC05DB83F /* CodeTrevor.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CodeTrevor/CodeTrevor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CodeTrevor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CodeTrevor/CodeTrevor.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CodeTrevor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCE3B5A57514D38715D07BF83585B624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F27F1FC45873C4CC3FC15C719F25BC73 /* Pods-Brain Flip.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Brain Flip/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Brain Flip/Pods-Brain Flip.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Brain_Flip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E487F173E6C9664F4E9E26B9635D23C /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95A71B914792EA54A48A288967FEED1F /* Build configuration list for PBXNativeTarget "CodeTrevor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				464F2CD511A78F879317C6D33DF11252 /* Debug */,
+				BAFAE6B0A4BFBCDB2FC87ADF827E84BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF7930B97222738898B744995CB264D7 /* Build configuration list for PBXNativeTarget "Pods-Brain Flip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE3B5A57514D38715D07BF83585B624 /* Debug */,
+				AE839407138F1D2095CBAE7BD9D02FD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
