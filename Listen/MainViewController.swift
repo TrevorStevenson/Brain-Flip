@@ -18,10 +18,9 @@ class MainViewController: UIViewController, GKGameCenterControllerDelegate {
     
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
     @IBOutlet weak var titleText: UILabel!
-    @IBOutlet weak var buttonConstraint: NSLayoutConstraint!
     @IBOutlet weak var brain1: UIImageView!
     @IBOutlet weak var brain2: UIImageView!
-    @IBOutlet weak var midConstraint: NSLayoutConstraint!
+    @IBOutlet weak var titleWidthConstraint: NSLayoutConstraint!
     
     func authenticateLocalPlayer()
     {
@@ -73,34 +72,25 @@ class MainViewController: UIViewController, GKGameCenterControllerDelegate {
         
         if UIDevice.current.userInterfaceIdiom == .pad
         {
-            topConstraint.constant = 150
-            titleText.font = UIFont(name: "Futura", size: 100)
-            buttonConstraint.constant = 40
-            midConstraint.constant = 100
+            topConstraint.constant = 100
+            titleText.font = UIFont(name: "Avenir-Book", size: 100)
+            titleWidthConstraint.constant = 500
         }
         
         if self.view.bounds.size.height == 480
         {
-            brain2.isHidden = true
-            
-            topConstraint.constant = 20
-            
-            brain1.frame = CGRect(x: view.frame.size.width/2 - brain1.frame.size.width/2, y: titleText.frame.minY + brain1.frame.size.height, width: brain1.frame.size.width, height: brain1.frame.size.height)
+            topConstraint.constant = 0
         }
         
         if self.view.bounds.size.height == 568
         {
-            brain2.isHidden = true
-            
             topConstraint.constant = 30
-            
-            brain1.frame = CGRect(x: view.frame.size.width/2 - brain1.frame.size.width/2, y: titleText.frame.minY + brain1.frame.size.height + 15, width: brain1.frame.size.width, height: brain1.frame.size.height)
         }
     }
 
     func presentInstructions()
     {
-        let alertView = UIAlertController(title: "Welcome", message: "Brain Flip is a fast-paced game of extreme focus. You will be presented with a number. If the number is black, select whether it is odd or even. If the number is red, select what it is not. For example, the correct answer for a red 7 would be even.", preferredStyle: .alert)
+        let alertView = UIAlertController(title: "Welcome", message: "Brain Flip is a fast-paced game of extreme focus. You will be presented with a number. If the number is black, select whether it is odd or even. If the number is red, select the opposite.", preferredStyle: .alert)
         
         alertView.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
         

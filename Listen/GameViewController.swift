@@ -43,10 +43,9 @@ class GameViewController: UIViewController {
             UserDefaults.standard.set(1, forKey: "firstTime")
         }
         
-        beginButton.frame = CGRect(x: self.view.frame.size.width/2 - (195/2), y: self.view.frame.size.height/2, width: 195, height: 50)
+        beginButton.frame = CGRect(x: self.view.frame.size.width/2 - 50, y: self.view.frame.size.height/2, width: 100, height: 100)
         beginButton.addTarget(self, action: #selector(GameViewController.startGame), for: .touchUpInside)
         beginButton.setTitleColor(UIColor.white, for: .normal)
-        beginButton.titleLabel?.font = UIFont(name: "Futura", size: 20)
         beginButton.setBackgroundImage(#imageLiteral(resourceName: "playbutton"), for: .normal)
         self.view.addSubview(beginButton)
         
@@ -59,26 +58,12 @@ class GameViewController: UIViewController {
         trueButton.isHidden = true
         falseButton.isHidden = true
         
-        
         directionLabel.adjustsFontSizeToFitWidth = true
-
-        
-    }
-    
-    override func viewDidLayoutSubviews() {
-        
-        super.viewDidLayoutSubviews()
-        
-        if UIDevice.current.userInterfaceIdiom == .pad
-        {
-            bottomConstraint.constant = 100
-        }
-        
     }
     
     func presentInstructions()
     {
-        let alertView = UIAlertController(title: "Welcome", message: "Brain Flip is a fast-paced game of extreme focus. You will be presented with a number. If the number is black, select whether it is odd or even. If the number is red, select what it is not. For example, the correct answer for a red 7 would be even.", preferredStyle: .alert)
+        let alertView = UIAlertController(title: "Welcome", message: "Brain Flip is a fast-paced game of extreme focus. You will be presented with a number. If the number is black, select whether it is odd or even. If the number is red, select the opposite.", preferredStyle: .alert)
         
         alertView.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
         

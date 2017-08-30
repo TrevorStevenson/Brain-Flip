@@ -39,7 +39,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brain Flip" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6S-py-SgQ">
-                                <rect key="frame" x="111.5" y="50" width="153.5" height="164"/>
+                                <rect key="frame" x="111" y="50" width="153.5" height="164"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="snT-7F-1rf"/>
                                 </constraints>
@@ -59,14 +59,14 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brainFlipLogo" translatesAutoresizingMaskIntoConstraints="NO" id="xR4-eN-6h8">
-                                <rect key="frame" x="273" y="107.5" width="50" height="50"/>
+                                <rect key="frame" x="272.5" y="107.5" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Tab-F8-biC"/>
                                     <constraint firstAttribute="height" constant="50" id="czR-rF-GaN"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brainFlipLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fBE-vZ-1d3">
-                                <rect key="frame" x="53" y="107.5" width="50" height="50"/>
+                                <rect key="frame" x="52.5" y="107.5" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="EuM-5F-meK"/>
                                     <constraint firstAttribute="height" constant="50" id="yuS-A6-sO2"/>
@@ -119,6 +119,7 @@
                         <outlet property="brain1" destination="fBE-vZ-1d3" id="Xyr-7h-sbT"/>
                         <outlet property="brain2" destination="xR4-eN-6h8" id="eAr-jk-aUj"/>
                         <outlet property="titleText" destination="z6S-py-SgQ" id="dWm-uH-Cjf"/>
+                        <outlet property="titleWidthConstraint" destination="snT-7F-1rf" id="OZk-vU-9Tf"/>
                         <outlet property="topConstraint" destination="pwa-fR-mWm" id="Ofs-Fs-4Q4"/>
                     </connections>
                 </viewController>
@@ -171,7 +172,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKz-ii-I9L">
                                 <rect key="frame" x="197.5" y="333.5" width="157.5" height="280.5"/>
                                 <color key="backgroundColor" red="0.92549019607843142" green="0.94117647058823528" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="45"/>
                                 <state key="normal" title="Even">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -182,7 +183,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhw-ff-2DY">
                                 <rect key="frame" x="20" y="333.5" width="157.5" height="280.5"/>
                                 <color key="backgroundColor" red="0.38431372549019605" green="0.78431372549019607" blue="0.47843137254901957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="45"/>
                                 <state key="normal" title="Odd">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -346,7 +347,6 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="bottomConstraint" destination="tb2-3k-pch" id="d2b-o9-oVu"/>
                         <outlet property="finalScoreLabel" destination="oRK-Xa-t52" id="7Tf-vW-lhk"/>
                         <outlet property="gameOverLabel" destination="o4t-GW-fa9" id="HSg-oL-aq9"/>
                     </connections>

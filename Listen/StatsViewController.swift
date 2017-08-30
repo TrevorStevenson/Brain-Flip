@@ -11,8 +11,6 @@ import UIKit
 class StatsViewController: UIViewController {
 
     @IBOutlet weak var finalScoreLabel: UILabel!
-    @IBOutlet weak var buttonConstraint: NSLayoutConstraint!
-    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
 
     @IBOutlet weak var gameOverLabel: UILabel!
     
@@ -32,10 +30,8 @@ class StatsViewController: UIViewController {
         
         if UIDevice.current.userInterfaceIdiom == .pad
         {
-            buttonConstraint.constant = 40
-            gameOverLabel.font = UIFont(name: "Futura", size: 80)
-            finalScoreLabel.font = UIFont(name: "Futura", size: 50)
-            bottomConstraint.constant = 100
+            gameOverLabel.font = UIFont(name: "Avenir-Book", size: 80)
+            finalScoreLabel.font = UIFont(name: "Avenir-Book", size: 50)
         }
         
     }
