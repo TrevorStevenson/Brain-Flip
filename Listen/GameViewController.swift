@@ -70,7 +70,7 @@ class GameViewController: UIViewController {
         self.present(alertView, animated: true, completion: nil)
     }
 
-    func startGame()
+    @objc func startGame()
     {
         beginButton.removeFromSuperview()
         
@@ -82,7 +82,7 @@ class GameViewController: UIViewController {
         gameTimer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(GameViewController.updateTimer), userInfo: nil, repeats: true)
     }
     
-    func updateTimer()
+    @objc func updateTimer()
     {
         progressBar.progress -= 1/30000
         
